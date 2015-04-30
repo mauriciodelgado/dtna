@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">Dashboard</a>
+<ul class="user-menu">
+<li class="dropdown pull-right">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> User <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+<li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div><!-- /.container-fluid -->
+</nav>
+
+<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+<!--<form role="search">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Buscar">
+</div>
+</form>-->
+<ul class="nav menu">
+<!--<li class="active"><a href="#">DTNA Dashbaord</a></li>-->
+<!--
+<li class="parent">
+<a href="#">
+<span class="glyphicon glyphicon-dashboard"></span> DTNA <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+</a>
+<ul class="children collapse" id="sub-item-1">
+<li>
+<a class="" href="v1.html">
+<span class="glyphicon glyphicon-share-alt"></span> Acumulado
+</a>
+</li>
+<li>
+<a class="" href="#">
+<span class="glyphicon glyphicon-share-alt"></span> Mensual
+</a>
+</li>
+<li>
+<a class="" href="#">
+<span class="glyphicon glyphicon-share-alt"></span> Semanal
+</a>
+</li>
+<li>
+<a class="" href="#">
+<span class="glyphicon glyphicon-share-alt"></span> Diario
+</a>
+</li>
+</ul>
+</li>
+-->
+<li><a href="index1.html"><span class="glyphicon glyphicon-dashboard"></span> March </a></li>
+<li><a href="index2.html"><span class="glyphicon glyphicon-dashboard"></span> April </a></li>
+<li><a href="index3.html"><span class="glyphicon glyphicon-dashboard"></span> May </a></li>
+
+<!--<li><a href="#"><span class="glyphicon glyphicon-dashboard"></span> Diario</a></li>
+<li><a href="forms.html"><span class="glyphicon glyphicon-pencil"></span> Forms</a></li>
+<li><a href="panels.html"><span class="glyphicon glyphicon-info-sign"></span> Alerts &amp; Panels</a></li>-->
+
+<!--
+<li role="presentation" class="divider"></li>
+<li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Login Page</a></li>
+-->
+</ul>
+<div class="attribution">Powered by <a href="http://www.branix.com">BraNix</a></div>
+</div><!--/.sidebar-->
+
+<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
+<div class="row">
+<ol class="breadcrumb">
+<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+<li class="active">DTNA Totals</li>
+
+</ol>
+</div><!--/.row-->
+
+<div class="row">
+<div class="col-lg-12">
+<h2 class="page-header">DTNA PERFORMANCE - May (demo)</h2>
+</div>
+</div><!--/.row-->
+	
+	
+<!--====================================================-->
+
+<div class="row">
+<div class="col-xs-4 col-md-4">
+<div class="panel panel-default">
+<div class="panel-body easypiechart-panel">
+<h4>Saltillo Expected Deliveries vs Distpaches</h4>
+	<a class="btn btn-default" href="may-1a.html">Details</a>	
+<div class="easypiechart" id="easypiechart-green" data-percent="91" ><span class="percent">91%</span>
+</div>
+<div class="datos-rp">
+<div class="datos-rp-L text-center">
+<h1>3,300</h1>
+<p>Deliveries</p>
+</div>
+<div class="datos-rp-R text-center">
+<h1>3,024</h1>
+<p>Dispatches</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-4 col-md-4">
+<div class="panel panel-default">	
+<div class="panel-body easypiechart-panel">
+<h4> Santiago Expected Deliveries vs Distpaches</h4>
+<a class="btn btn-default" href="may-1b.html">Details</a>	
+<div class="easypiechart" id="easypiechart-blue" data-percent="108" ><span class="percent">108%</span>
+</div>
+<div class="datos-rp">
+<div class="datos-rp-L text-center">
+<h1>1,344</h1>
+<p>Deliveries</p>
+</div>
+<div class="datos-rp-R text-center">
+<h1>1,457</h1>
+<p>Dispatches</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-4 col-md-4">
+<div class="panel panel-default">
+<div class="panel-body easypiechart-panel">
+<h4> Combined Deliveries vs Distpaches</h4>
+	<a class="btn btn-default" href="may-1c.html">Details</a>	
+<div class="easypiechart" id="easypiechart-blue2" data-percent="77" ><span class="percent">77%</span>
+</div>
+<div class="datos-rp">
+<div class="datos-rp-L text-center">
+<h1>4,644</h1>
+<p>Deliveries</p>
+</div>
+<div class="datos-rp-R text-center">
+<h1>3,621</h1>
+<p>Dispatches</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!--/.row-->
+	
+	
+<!--GAUGES ROW 2-->
+
+	
+	
+	
+<div class="row">
+	
+<div class="col-xs-4 col-md-4">
+<div class="panel panel-default">
+<div class="panel-body easypiechart-panel">
+<h4>  Saltillo Expected Deliveries vs Plant Releases</h4>
+	<a class="btn btn-default" href="may-2a.html">Details</a>
+<div class="easypiechart" id="easypiechart-green2" data-percent="105" ><span class="percent">105%</span>
+</div>
+<div class="datos-rp">
+<div class="datos-rp-L text-center">
+<h1>3,300</h1>
+<p>Deliveries</p>
+</div>
+<div class="datos-rp-R text-center">
+<h1>3,132</h1>
+<p>Releases</p>
+</div>
+</div>
+</div>
+</div>
+</div>	
+	
+<div class="col-xs-4 col-md-4">
+<div class="panel panel-default">
+<div class="panel-body easypiechart-panel">
+<h4>Santiago Expected Deliveries vs Plant Releases</h4>
+	<a class="btn btn-default" href="may-2b.html">Details</a>
+<div class="easypiechart" id="easypiechart-blue3" data-percent="96" ><span class="percent">96%</span>
+</div>
+<div class="datos-rp">
+<div class="datos-rp-L text-center">
+<h1>1,344</h1>
+<p>Deliveries</p>
+</div>
+<div class="datos-rp-R text-center">
+<h1>1,393</h1>
+<p>Releases</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+	
+<div class="col-xs-4 col-md-4">
+<div class="panel panel-default">
+<div class="panel-body easypiechart-panel">
+<h4>Combined Expected Deliveries vs Plant Releases</h4>
+	<a class="btn btn-default" href="may-2c.html">Details</a>
+<div class="easypiechart" id="easypiechart-blue4" data-percent="80" ><span class="percent">80%</span>
+</div>
+<div class="datos-rp">
+<div class="datos-rp-L text-center">
+<h1>3,621</h1>
+<p>Deliveries</p>
+</div>
+<div class="datos-rp-R text-center">
+<h1>4,525</h1>
+<p>Releases</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><!--/.row-->	
+	
+	
+	
+
+<!-- ================== GRAFICAS-->
+<div class="row">
+<!--
+<div class="col-lg-6">
+<div class="panel panel-default">
+<div class="panel-heading"><span class="glyphicon glyphicon-signal"></span> Combined Expected Deliveries vs Plant Releases</div>
+<div class="panel-body">
+<div class="canvas-wrapper">
+<canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+</div>
+</div>
+</div>
+</div>
+-->
+
+<div class="col-lg-12">
+<div class="panel panel-default">
+<div class="panel-heading"><span class="glyphicon glyphicon-signal"></span> Deliveries per week</div>
+<div class="panel-body">
+<div class="canvas-wrapper">
+<canvas class="main-chart" id="bar-chart" height="100" width="600"></canvas>
+</div>
+</div>
+</div>
+</div>
+</div>
+	
+	<!--/.row-->		
+
+
+
+
+
+
+
+
+</div>	<!--/.main-->
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/chart.min.js"></script>
+<script src="js/chart-data.js"></script>
+		<script src="js/chart-data-jc-3.js"></script>
+<script src="js/easypiechart.js"></script>
+<script src="js/easypiechart-data.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script>
+$('#calendar').datepicker({
+});
+
+!function ($) {
+$(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+$(this).find('em:first').toggleClass("glyphicon-minus");      
+}); 
+$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+}(window.jQuery);
+
+$(window).on('resize', function () {
+if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+})
+$(window).on('resize', function () {
+if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+})
+</script>
+</body>
+
+</html>
